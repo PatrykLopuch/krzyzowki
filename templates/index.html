@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Krzyżówki</title>
+</head>
+<body>
+    
+    
+    
+   {{ splitList[1] }}{{ splitList[2] }}{{ splitList[3] }}{{ splitList[4] }}{{ splitList[5] }} {{ splitList[6] }}
+    
+
+    match: {{ match }}
+    found: {{ found }}
+    jest: {{ jest }}
+    grid[122]: {{grid[122]}}
+    
+    
+    <br><br>
+    <div id="grid">
+        {% for item in grid %}
+        
+        <div id="okienko">{{ grid[item] }}</div>
+        
+        {% endfor %}
+    </div>
+</body>
+</html>

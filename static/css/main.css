@@ -1,0 +1,15 @@
+body {
+    
+}
+
+div#grid {
+    display: grid;
+    grid-template-columns: repeat(13, 45px);
+    grid-template-rows: repeat(13, 45px);
+}
+
+div#okienko {
+    border: 1px solid black;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
